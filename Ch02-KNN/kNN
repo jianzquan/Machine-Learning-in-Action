@@ -1,5 +1,4 @@
 # 2.1
-
 import numpy as np
 import operator
 
@@ -67,7 +66,6 @@ if __name__ == '__main__':
     #打印分类结果
     print(test_class)
     
-    
 # 2.2.1
 import numpy as np
 
@@ -108,7 +106,6 @@ def file2matrix(filename):
             classLabelVector.append(3)
         index += 1
     return returnMat, classLabelVector
-
 
 if __name__ == '__main__':
     #打开的文件名
@@ -232,7 +229,6 @@ def showdatas(datingDataMat, datingLabels):
     #显示图片
     plt.show()
 
-
 if __name__ == '__main__':
     #打开的文件名
     filename = "datingTestSet.txt"
@@ -306,7 +302,6 @@ def autoNorm(dataSet):
     normDataSet = normDataSet / np.tile(ranges, (m, 1))
     #返回归一化数据结果,数据范围,最小值
     return normDataSet, ranges, minVals
-
 
 if __name__ == '__main__':
     #打开的文件名
@@ -459,7 +454,6 @@ def datingClassTest():
             errorCount += 1.0
     print("错误率:%f%%" %(errorCount/float(numTestVecs)*100))
 
-
 if __name__ == '__main__':
     datingClassTest()
     
@@ -593,7 +587,6 @@ def classifyPerson():
     #打印结果
     print("你可能%s这个人" % (resultList[classifierResult-1]))
 
-
 if __name__ == '__main__':
     classifyPerson()
     
@@ -670,7 +663,6 @@ def handwritingClassTest():
         if(classifierResult != classNumber):
             errorCount += 1.0
     print("总共错了%d个数据\n错误率为%f%%" % (errorCount, errorCount/mTest * 100))
-
 
 if __name__ == '__main__':
     handwritingClassTest()
