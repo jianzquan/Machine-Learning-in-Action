@@ -183,7 +183,7 @@ def colicTest():
             lineArr.append(float(currLine[i]))
         trainingSet.append(lineArr)
         trainingLabels.append(float(currLine[-1]))
-    trainWeights = stocGradAscent1(np.array(trainingSet), trainingLabels, 500)        #使用改进的随即上升梯度训练
+    trainWeights = stocGradAscent1(np.array(trainingSet), trainingLabels, 500)#使用改进的随即上升梯度训练
     errorCount = 0; numTestVec = 0.0
     for line in frTest.readlines():
         numTestVec += 1.0
